@@ -1,0 +1,57 @@
+[
+    {
+        "title": "Technical Leader and Product Strategist for SAAS",
+        "subtitle": "JoYnt: Chicago, IL",
+        "date": "2021 –  present",
+        "image": "joynt.png",
+        "description": "I led the development of a dispensary e-commerce, kiosk, and TV menu platform, driving technical and product strategy using a modern tech stack. My leadership and strategic integrations positioned JoYnt as an industry leader and fueled ongoing growth and innovation."
+    },{
+        "title": "Product Architect (Contract)",
+        "subtitle": "SKL Trading: London, UK",
+        "date": "Sept 2023 – Jan 2024",
+        "image": "skl.svg",
+        "description": "Rewrote market making platform with a modular design using ZeroMQ and Node TS. Implemented cryptocurency exchange connectivity and integrated Prometheus & Grafana metrics for improved insights. Led the development of a client UI with Redwood JS for liquidity management and analytics."
+    },{
+        "title": "Technology Consultant (Contract)",
+        "subtitle": "Cannabis Workforce Initiative: NY",
+        "date": "Nov 2023 – Feb 2024",
+        "image": "cwi.jpeg",
+        "description": "Implemented a large language model integration using the OpenAI Assistant API. Led the design and development of the Career Coach system delivered as a PHP wordpress plugin."
+    },{
+        "title": "President & Business Strategist",
+        "subtitle": "Perception Farms: Chicago, IL",
+        "date": "2019 –  present",
+        "image": "perception.png",
+        "description": "I led the growth of a vertically integrated cannabis business, managing product development, compliance, and operations. I drove business growth through strategic partnerships, while ensuring regulatory compliance and operational efficiency."
+    },{
+        "title": "Director, Software Engineering",
+        "subtitle": "Epsilon - Conversant: Chicago, IL",
+        "date": "Oct 2016 –  Feb 2022",
+        "image": "conversant.png",
+        "description": "As Managing Director of the Ad Server API Team, I led the design, development, testing, and deployment of server-side and client-side components for Conversant's RTB, CRM, and DMP platforms, ensuring scalability across global data centers. "
+    },{
+        "title": "Chief Architect",
+        "subtitle": "Nuvatek: Chicago, IL",
+        "date": "Aug 2013 –  Oct 2016",
+        "image": "guavatech.jpg",
+        "description": "As Chief Architect and Lead Developer, I optimized and extended high-frequency trading systems using Java, Python, and C++. I also led the design and deployment of a custom market analytics suite and integrated disparate systems using RabbitMQ. Additionally, I  improved low-latency message deduplication software."
+    },{
+        "title": "Director of Software Development & Financial Engineering",
+        "subtitle": "INTL FCStone Inc: Chicago, IL",
+        "date": "Jan 2012 –  Aug 2013",
+        "image": "stonex.png",
+        "description": "I led the development of transaction data routing, monitoring, reconciliation, and reporting solutions using RabbitMQ, MongoDB, and C#. I also produced extensive technical and business documentation, including API references and business case proposals, to support internal and external stakeholders. I oversaw all software development and financial engineering for HFT solutions at Hanley Group Capital for 3 years prior to being acquired by INTL FCStone."
+    },{
+        "title": "Director Of Software Development",
+        "subtitle": "Hanley Group: Chicago, IL",
+        "date": "Jun 2010 - Jan 2012",
+        "image": "hanley.png",
+        "description": "As INTL Hanley Director Of Software Development (Jun 2010 - Jan 2012): Developed, managed, operated and delivered C#, WPF, FIX/FAST based high frequency trading platform for proprietary market making in the futures and options markets. Designed and implemented C#, WCF and MVC based web application for OTC term structured derivatives valuation and book management."
+    },{
+        "title": "Manager Of Financial Engineering",
+        "subtitle": "Hanley Group: Chicago, IL",
+        "date": "Feb 2009 - Jun 2010",
+        "image": "hanley.png",
+        "description": "Developed and improved financial models for market making energy, foreign exchange, treasury and agricultural futures and options, leveraging Matlab, Python and C# based toolsets."
+    }
+]
