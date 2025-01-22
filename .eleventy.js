@@ -65,6 +65,10 @@ module.exports = function(eleventyConfig) {
     watch: ['./public/css/styles.css']
   });
 
+  eleventyConfig.addFilter("filterByCompany", (projects, companySlug) => {
+    return projects.filter(project => project['company-slug'] === companySlug);
+  });
+
   return {
     htmlTemplateEngine: "njk",
     dir: {
