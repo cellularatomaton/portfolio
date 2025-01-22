@@ -4,6 +4,11 @@ const path = require("path");
 const markdownIt = require("markdown-it");
 
 module.exports = function(eleventyConfig) {
+  const companiesData = require("./src/_data/companies.json");
+  eleventyConfig.addCollection("companies", function () {
+    return companiesData;
+  });
+
   const portfolio = require("./src/_data/portfolio.json");
   eleventyConfig.addCollection("projects", function(collectionApi) {
     const md = new markdownIt();

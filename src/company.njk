@@ -1,0 +1,45 @@
+---
+layout: base.njk
+title: Company - Walter Moore
+permalink: "/companies/{{ company.slug }}/"
+pagination:
+  data: collections.companies
+  size: 1
+  alias: company
+---
+
+<section id="about" class="py-16">
+  <div class="container mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-8">{{ company.title }}</h3>
+    <div class="flex flex-row flex-wrap items-stretch gap-8">
+      <!-- Image Section -->
+      <div class="grow shrink relative">
+        <!-- Project Image -->
+        <div 
+          class="h-full w-full bg-cover bg-center rounded-xl border border-gray-200 shadow-lg" 
+          style="background-image: url('img/{{ company.image }}');">
+        </div>
+        <!-- PFP Image -->
+        <img src="/img/pfp.jpg" alt="{{ company.title }}" class="absolute left-0 top-0 w-24 h-24 rounded-tl-xl rounded-br-xl border-2 border-white shadow-lg">
+      </div>
+      <!-- Details Section -->
+      <div class="grow shrink border-2 rounded-xl p-4">
+        <h4 class="text-xl font-semibold">{{ company.title }}</h4>
+        <p class="text-gray-600">{{ company.subtitle }}</p>
+        <p class="mt-2 text-gray-700">{{ company.description }}</p>
+        <span class="text-sm text-gray-500">{{ company.date }}</span>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+<section id="about" class="py-16">
+  <div class="container mx-auto px-6">
+    <div class="prose mx-auto">
+      {{ project.details | safe }}
+    </div>
+  </div>
+</section>
