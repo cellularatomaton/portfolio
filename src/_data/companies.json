@@ -46,7 +46,7 @@
         "subtitle": "Nuvatek: Chicago, IL",
         "date": "Aug 2013 –  Oct 2016",
         "image": "guavatech.jpg",
-        "slug": "nuvatek",
+        "slug": "guavatech",
         "description": "As Chief Architect and Lead Developer, I optimized and extended high-frequency trading systems using Java, Python, and C++. I also led the design and deployment of a custom market analytics suite and integrated disparate systems using RabbitMQ. Additionally, I  improved low-latency message deduplication software."
     },{
         "title": "Director of Software Development & Financial Engineering",
