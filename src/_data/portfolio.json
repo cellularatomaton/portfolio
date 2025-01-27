@@ -5,42 +5,52 @@
         "title": "Static Portfolio Site",
         "image": "home.png",
         "urls": ["waltermoore.me"],
-        "skills": ["Technical Writing", "Engineering"],
+        "skills": ["Technical Writing", "Engineering", "UX", "Technical Writing", "Documentation"],
+        "tools": ["Eleventy", "Vercel", "Github Actions", "SendGrid"],
+        "languages": ["HTML", "Javascript"],
         "description": "Welcome to waltermoore.me, a sleek and modern portfolio site built with 11ty and styled with Tailwind CSS, showcasing Walter Moore's journey from software engineering to technical sales and consulting. Deployed on Vercel for fast and reliable performance, the site highlights Walter's expertise, impactful projects, and professional philosophy with a clean, responsive design. Explore a dynamic timeline, portfolio of work, and insights into how Walter bridges technology and business to drive meaningful results."
     },{
         "project-slug": "joynt-platform",
         "company-slug": "joynt",
-        "title": "JoYnt Platform: Unified Solution for Cannabis Dispensaries",
+        "title": "Unified Menu Solution for Dispensaries",
         "image": "desktop.png",
         "urls": ["https://www.joyntshops.com"],
-        "skills": ["Fundraising", "Sales", "Project Management", "Engineering"],
+        "skills": ["Fundraising", "Sales", "Project Management", "Engineering", "Dev Ops", "Technical Writing", "Documentation"],
+        "tools": ["React Native", "React", "NextJs", "Expo", "Vercel", "Github Actions", "DNS"],
+        "languages": ["Typescript", "Javascript", "HTML"],
         "description": "The JoYnt platform is a comprehensive solution for dispensary e-commerce, in-store kiosks, and digital signage, enabling seamless management of online sales, inventory, and customer orders. It integrates with point-of-sale systems like Treez for real-time tracking and regulatory compliance. With a scalable, user-friendly design, JoYnt empowers dispensary operators to adapt quickly to market changes and drive growth in the cannabis retail space."
     },
     {
         "project-slug": "dispensary",
-        "company-slug": "perception",
+        "company-slug": "pccs",
         "title": "Licensed Cannabis Dispensary",
         "image": "rogers-park-outside-1.jpeg",
         "urls": ["https://www.perceptionfarms.com","https://www.perceptioncannabis.com"],
-        "skills": ["Startup", "Corporate Admin", "Fundraising", "Operations"],
+        "skills": ["Startup", "Corporate Admin", "Fundraising", "Operations", "Technical Writing", "Compliance"],
+        "tools": ["Google Workspace", "Adobe Suite", "DNS"],
+        "languages": [],
         "description": "The project involved leading the development and growth of a vertically integrated cannabis business, with a focus on product development, regulatory compliance, and operational efficiency in a highly regulated industry. I directed business strategy, customer relationship management, and the integration of advanced POS systems, ensuring scalability and compliance with state and federal regulations. By fostering key partnerships and spearheading innovation, I successfully drove revenue growth while adapting to evolving market conditions."
     },
     {
         "project-slug": "craft-grow",
-        "company-slug": "perception",
+        "company-slug": "pgc",
         "title": "Craft Grower",
         "image": "gardens.png",
         "urls": ["https://www.perceptionfarms.com","https://www.perceptioncannabis.com"],
-        "skills": ["Startup", "Corporate Admin", "Fundraising", "Operations"],
+        "skills": ["Startup", "Corporate Admin", "Fundraising", "Operations", "Technical Writing", "Compliance"],
+        "tools": ["Google Workspace", "Adobe Suite", "DNS"],
+        "languages": [],
         "description": "The project involved leading the development and growth of a vertically integrated cannabis business, with a focus on product development, regulatory compliance, and operational efficiency in a highly regulated industry. I directed business strategy, customer relationship management, and the integration of advanced POS systems, ensuring scalability and compliance with state and federal regulations. By fostering key partnerships and spearheading innovation, I successfully drove revenue growth while adapting to evolving market conditions."
     },
     {
         "project-slug": "holding-company",
-        "company-slug": "perception",
+        "company-slug": "pfi",
         "title": "Vertically Integrated Cannabis Brand",
         "image": "vertical-concept.png",
         "urls": ["https://www.perceptionfarms.com","https://www.perceptioncannabis.com"],
-        "skills": ["Startup", "Corporate Admin", "Fundraising", "Operations"],
+        "skills": ["Startup", "Corporate Admin", "Fundraising", "Operations", "Technical Writing", "Compliance"],
+        "tools": ["Google Workspace", "Adobe Suite", "DNS", "Wix"],
+        "languages": [],
         "description": "The project involved leading the development and growth of a vertically integrated cannabis business, with a focus on product development, regulatory compliance, and operational efficiency in a highly regulated industry. I directed business strategy, customer relationship management, and the integration of advanced POS systems, ensuring scalability and compliance with state and federal regulations. By fostering key partnerships and spearheading innovation, I successfully drove revenue growth while adapting to evolving market conditions."
     },{
         "project-slug": "skl-market-maker",
@@ -48,16 +58,20 @@
         "title": "Cryptocurrency Market Making",
         "image": "skl-market-maker.webp",
         "urls": ["https://www.sklventures.io"],
-        "skills": ["Engineering", "UX"],
-        "description": "The project involved a complete rewrite of SKL Trading's market making platforms, with a focus on modular design using ZeroMQ and Node TS. I led the development of exchange connectivity integrations and tools to streamline processes, while implementing Prometheus metrics for enhanced operational insights through Grafana visualization. Additionally, I spearheaded the development of a client UI with Redwood JS, enabling liquidity management across multiple pools and exchanges with consolidated views and analytics for SKL’s clients."
+        "skills": ["Engineering", "UX", "Technical Writing", "Documentation"],
+        "tools": ["ZeroMQ", "Node", "PM2", "Prometheus", "Grafana"],
+        "languages": [],
+        "description": "The project involved a complete rewrite of SKL Trading's market making platforms, with a focus on modular design using ZeroMQ and Node TS. I led the development of exchange connectivity integrations and tools to streamline processes, while implementing Prometheus metrics for enhanced operational insights through Grafana visualization."
     },{
         "project-slug": "skl-client-portal",
         "company-slug": "skl",
         "title": "Cryptocurrency Client Portal",
         "image": "skl-inventory.png",
         "urls": ["https://www.sklventures.io"],
-        "skills": ["Engineering", "UX"],
-        "description": "The project involved a complete rewrite of SKL Trading's market making platforms, with a focus on modular design using ZeroMQ and Node TS. I led the development of exchange connectivity integrations and tools to streamline processes, while implementing Prometheus metrics for enhanced operational insights through Grafana visualization. Additionally, I spearheaded the development of a client UI with Redwood JS, enabling liquidity management across multiple pools and exchanges with consolidated views and analytics for SKL’s clients.",
+        "skills": ["Engineering", "UX", "Technical Writing", "Documentation"],
+        "tools": ["Redwood JS"],
+        "languages": ["Typescript"],
+        "description": "I spearheaded the design and development of a client UI with Redwood JS, enabling liquidity management across multiple pools and exchanges with consolidated views and analytics for SKL’s clients.",
         "details": "SKL Trading Market Making Platform: The SKL Trading Market Making Platform was developed to optimize trading strategies and provide liquidity across multiple financial exchanges. The project involved a complete rewrite of the platform, focusing on a modular design using ZeroMQ and Node TS to enhance scalability, flexibility, and performance. The platform integrates a variety of exchange connectivity solutions and uses Prometheus for operational monitoring, with Grafana used for data visualization, enabling deep insights into market operations. A key feature was the development of a client-facing UI using Redwood JS, which allows clients to manage liquidity across multiple liquidity pools and exchanges, providing consolidated views, tools, analytics, and asset management capabilities. This platform is designed to provide seamless connectivity, high performance, and real-time visibility for market-making operations. My Role: As Senior Lead Developer, I led the complete rewrite of the market-making platform, creating a modular design that allowed for scalability and future enhancements. I oversaw the development of exchange connectivity solutions, which streamlined the process of connecting with various trading platforms and enabled seamless market operations. Additionally, I integrated Prometheus metrics across the platform, providing real-time operational insights and using Grafana for data visualization. I also led the development of the client-facing UI with Redwood JS, enabling liquidity management across exchanges with advanced analytics and asset management tools. Lastly, I contributed to the planning and execution of migrating the platform to Kubernetes to unlock greater scalability and reliability, ensuring the platform could handle increasing workloads and provide high availability."
     },{
         "project-slug": "universal-site-tag",
@@ -65,7 +79,9 @@
         "title": "Adserver API Migration & Deprecation",
         "image": "universal-site-tag.webp",
         "urls": ["https://www.conversant.com"],
-        "skills": ["Project Management", "Product Management", "Customer Success", "Engineering"],
+        "skills": ["Project Management", "Product Management", "Customer Success", "Engineering", "Technical Writing", "Documentation"],
+        "tools": ["Linux", "Docker", "Elastic Search", "Logstash", "Kabana", "OpenAPI"],
+        "languages": ["Java", "Javascript", "HTML"],
         "description": "The project involved leading the design, development, testing, and deployment of Java server-side and JS client-side components for Conversant's RTB, CRM, and DMP platforms, operating at global scale. I was responsible for ensuring seamless deployments across hundreds to thousands of data center nodes, managing large-scale data processing, and maintaining high-performance solutions. Additionally, I led technical documentation efforts, including creating the OpenAPI Swagger server for API references, ensuring clear communication and system reliability across the organization.",
         "details": "The Conversant RTB, CRM, and DMP platforms are designed to manage large-scale data processing for digital advertising, handling massive volumes of real-time data across a global infrastructure. The platforms provide real-time bidding (RTB), customer relationship management (CRM), and data management platform (DMP) services, allowing clients to target and analyze audiences at scale. The project involved the design and development of Java server-side components and JS client-side components, which were implemented across numerous global data centers, handling hundreds to thousands of bare metal nodes. With an emphasis on scalability and performance, the platform was built to handle big data challenges, ensuring seamless deployment, high throughput, and low-latency processing. A key part of the project was developing and deploying the OpenAPI Swagger server, which hosted internal API reference documentation, facilitating smooth collaboration between technical teams. My Role: As Managing Director of the Ad Server API Team, I led the design, development, testing, and deployment of core components for the Conversant RTB, CRM, and DMP platforms. I guided my team through the creation of Java server-side components and JS client-side components, ensuring they were optimized for global scalability and integration with the platform’s overall architecture. I oversaw the development process to ensure adherence to best practices and quality assurance standards, focusing on optimizing data processing pipelines and achieving high performance across millions of data points. I also played a pivotal role in coordinating the deployment of these components across global data centers, ensuring efficient use of infrastructure and the scalability necessary to meet the growing demands of the platform. In addition to my technical leadership, I developed extensive documentation, including API reference guides using OpenAPI Swagger and detailed narrative and technical guides in Confluence, ensuring clarity and consistency across internal teams. This experience equipped me with a deep understanding of distributed systems, large-scale deployments, and big data challenges, all while ensuring the platform remained reliable, performant, and scalable to meet the needs of a fast-paced digital advertising industry."
     },{
@@ -75,6 +91,8 @@
         "image": "artemis.webp",
         "urls": ["https://guavatech.com"],
         "skills": ["Startup"],
+        "tools": [],
+        "languages": [],
         "description": "The project involved developing and optimizing high-frequency trading systems for futures and options markets, using Java, Python, and C++. I designed and deployed a custom suite for market analytics, system automation, and data visualization, utilizing the MEAN stack and integrating various systems using RabbitMQ. Additionally, I led the development of a cross-exchange cryptocurrency trading system and a proof-of-concept GPU cryptocurrency mining system, while ensuring high-performance and low-latency operations across distributed data centers.",
         "details": "The project involved the development and optimization of high-frequency trading systems in the futures and options markets, leveraging Java, Python, and C++ to ensure low-latency performance and scalability. A key component of the project was the design and deployment of a custom suite for market analytics, system automation, and data visualization, utilizing the MEAN stack (MongoDB, Express.js, Angular.js, Node.js) with a Python and Docker-based backend. This suite allowed for high performance, providing low-level system access via a C++ plugin model. Additionally, I integrated several disparate systems using RabbitMQ as a messaging middle layer to ensure seamless communication between components. As part of a skunkworks initiative, I also prototyped and deployed a GPU-based cryptocurrency mining system, leveraging excess energy in existing data center infrastructure, and conducted research into blockchain and smart contract technologies, which led to the development of a dark chain offering. Furthermore, I created a cross-exchange cryptocurrency trading system, enabling more efficient trading across multiple platforms. My role as Chief Architect and Lead Developer involved overseeing the design, optimization, and extension of trading systems, ensuring they met the demanding needs of the futures and options markets. I also led the development of the analytics suite and trading systems, ensuring seamless integration of technologies and scalability for expanding into new markets. As the senior technical writer, I was responsible for documenting APIs, creating internal user guides, pitch presentations, and UX writing to support both internal teams and client-facing communication. I maintained and improved low-latency exchange message deduplication and quality of service (QoS) systems, ensuring the platform delivered the highest performance across physically separate data centers, contributing to the success and scalability of the platform."
     },{
@@ -84,6 +102,8 @@
         "image": "strategy-lab.png",
         "urls": ["https://guavatech.com"],
         "skills": ["Startup"],
+        "tools": [],
+        "languages": [],
         "description": "The project involved developing and optimizing high-frequency trading systems for futures and options markets, using Java, Python, and C++. I designed and deployed a custom suite for market analytics, system automation, and data visualization, utilizing the MEAN stack and integrating various systems using RabbitMQ."
     },{
         "project-slug": "dedup",
@@ -117,7 +137,7 @@
         "description": "The project involved developing and delivering liquidity routing, monitoring, reconciliation, and reporting solutions at INTL FCStone, using a RabbitMQ, MongoDB, and C#-based communication layer to integrate with various third-party middleware solutions. I also contributed significantly to technical writing, creating API and UML documentation for internal teams and business case proposals for decision-makers."
     },{
         "project-slug": "hanley-trading-platform",
-        "company-slug": "hanley",
+        "company-slug": "hgc",
         "title": "HFT Engineering",
         "image": "hanley-hft.webp",
         "urls": ["https://web.archive.org/web/20110304005706/http://www.hanleygroup.com/"],
@@ -170,6 +190,7 @@
         "details": "EquiSeed EST & DAO is a blockchain-based solution designed to address the funding and financial challenges faced by Social Equity Companies (SECs) in the Illinois cannabis industry. The Illinois Cannabis Regulation and Tax Act (CRTA) was passed with the goal of promoting long-term wealth creation for communities that have been disproportionately impacted by the war on drugs. SECs, which include individuals from Disproportionately Impacted Areas (DIAs) or those with cannabis-related records, are given a competitive advantage in the cannabis licensing process through a 20% increase in their application scores. However, despite these advantages, SECs face significant barriers to entry, particularly in securing the capital needed for business development and build-out, which often forces them to rely on predatory investors and loan structures that undermine their long-term success.\nThe EquiSeed platform aims to solve these issues by using blockchain technology, specifically through the issuance of the EquiSeed Token (EST) and the governance of the transactions via a Decentralized Autonomous Organization (DAO). The EST represents debt from SECs to token holders, providing a decentralized and transparent way to fund cannabis businesses while protecting SECs from the predatory financial practices they currently face. The smart contracts associated with the DAO ensure that all financial transactions are automated and governed by the community, with SECs able to access funding without having to give up significant equity or fall prey to high-interest loans. This decentralized lending model allows SECs to secure the necessary capital for their businesses while maintaining control and ownership, thus aligning with the spirit of the CRTA.\nThe EquiSeed DAO is governed by a decentralized community of stakeholders, with each token holder entitled to vote on decisions related to loan approvals and platform governance. This structure allows the community to oversee and ensure the platform operates transparently, effectively, and fairly. SECs applying for loans must sign a Tokenization Agreement, which secures their loan with their cannabis business license as collateral. The platform will also include an EquiSeed Oracle to provide real-world data to the smart contracts and ensure stable coin swaps and loan paybacks. The long-term goal is to create a resilient, decentralized finance ecosystem that supports SECs in Illinois and potentially other states, helping them compete with larger, well-capitalized cannabis companies in a rapidly evolving market. Through this innovative approach, EquiSeed aims to democratize cannabis industry ownership, ensuring that the benefits of cannabis legalization reach those most affected by its criminalization."
     },{
         "project-slug": "arbmageddon",
+        "company-slug": "waltermoore",
         "title": "Cross Exchange Triangle Arbitrage",
         "image": "arbmageddon.png",
         "urls": ["https://github.com/cellularatomaton/arbmageddon/blob/master/README.md"],
@@ -181,6 +202,7 @@
 
     },{
         "project-slug": "cli-stacker",
+        "company-slug": "waltermoore",
         "title": "CLI Stacker",
         "image": "cli-stacker.webp",
         "urls": ["https://github.com/cellularatomaton/cli-stacker/blob/master/README.md"],

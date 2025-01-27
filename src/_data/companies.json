@@ -35,6 +35,20 @@
         "slug": "pfi",
         "description": "I led the growth of a vertically integrated cannabis business, managing product development, compliance, and operations. I drove business growth through strategic partnerships, while ensuring regulatory compliance and operational efficiency."
     },{
+        "title": "COO & Technical Lead",
+        "subtitle": "Perception Cannabis: Chicago, IL",
+        "date": "2019 –  present",
+        "image": "perception.png",
+        "slug": "pccs",
+        "description": "I led Perception Cannabis in its founding, development, startup and operations.  As COO I have leveraged my technical background to automate much of our operations, streamlining processes and maximizing profit margins."
+    },{
+        "title": "President & Technical Lead",
+        "subtitle": "Perception Cannabis: Chicago, IL",
+        "date": "2020 –  present",
+        "image": "perception.png",
+        "slug": "pgc",
+        "description": "I led Perception Gardens in its founding, development, startup and operations."
+    },{
         "title": "Director, Software Engineering",
         "subtitle": "Epsilon - Conversant: Chicago, IL",
         "date": "Oct 2016 –  Feb 2022",
@@ -69,5 +83,12 @@
         "image": "hanley.png",
         "slug": "hanley",
         "description": "Developed and improved financial models for market making energy, foreign exchange, treasury and agricultural futures and options, leveraging Matlab, Python and C# based toolsets."
+    },{
+        "title": "It's Me!",
+        "subtitle": "Personal Projects",
+        "date": "May 1979 - Present",
+        "image": "wm.png",
+        "slug": "waltermoore",
+        "description": "I regularly take on personal projects of all sorts.  Some of my hobbies include hacking, software development, physics, math, woodworking, playing guitar, playing piano, cooking, baking, gardening and more!"
     }
 ]

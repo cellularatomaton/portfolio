@@ -12,14 +12,30 @@
     <header class="bg-white shadow sticky top-0 z-50">
       <div class="container mx-auto px-6 py-4 flex justify-between items-center">
         <a href="/">
-        <h1 class="text-2xl"><span class="font-bold">WALTER </span>MOORE</h1>
+          <img src="/img/waltermoore.png" alt="{{ project.title }}" class="w-64"/>
         </a>
-        <nav>
-          <ul class="flex space-x-6">
-            <li><a href="#about" class="text-gray-700 hover:text-blue-500">About</a></li>
-            <li><a href="#experience" class="text-gray-700 hover:text-blue-500">Experience</a></li>
-            <li><a href="#projects" class="text-gray-700 hover:text-blue-500">Projects</a></li>
-            <li><a href="#contact" class="text-gray-700 hover:text-blue-500">Contact</a></li>
+        <!-- Hamburger Icon -->
+        <button 
+          id="menu-toggle" 
+          class="lg:hidden block text-gray-700 focus:outline-none"
+          aria-label="Toggle navigation"
+        >
+          <!-- Icon (Hamburger) -->
+          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+        <!-- Navigation -->
+        <nav 
+          id="nav-menu" 
+          class="hidden lg:block absolute top-full left-0 lg:static lg:flex w-full lg:w-auto bg-white lg:bg-transparent shadow-md lg:shadow-none"
+        >
+          <ul class="flex flex-col lg:flex-row lg:space-x-6">
+            <li><a href="#about" class="block px-6 py-2 text-gray-700 hover:text-blue-500">About</a></li>
+            <li><a href="#experience" class="block px-6 py-2 text-gray-700 hover:text-blue-500">Experience</a></li>
+            <li><a href="#projects" class="block px-6 py-2 text-gray-700 hover:text-blue-500">Projects</a></li>
+            <li><a href="#contact" class="block px-6 py-2 text-gray-700 hover:text-blue-500">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -33,5 +49,15 @@
         <p>&copy; 2024 Walter Moore. All Rights Reserved.</p>
       </div>
     </footer>
+    <!-- JavaScript for Toggle -->
+    <script>
+      const menuToggle = document.getElementById('menu-toggle');
+      const navMenu = document.getElementById('nav-menu');
+
+      menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('hidden');
+        navMenu.classList.toggle('block');
+      });
+    </script>
   </body>
 </html>
