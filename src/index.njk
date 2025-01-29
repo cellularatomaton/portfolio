@@ -74,8 +74,8 @@ title: Portfolio - Walter Moore
       {% for project in portfolio %}
       
       <div class="bg-white flex flex-col rounded-xl border border-2 h-full">
-        <a href="/projects/{{project['project-slug']}}/" class="flex flex-col h-full">
-          <img src="/projects/{{project['project-slug']}}/img/{{project.image}}" alt="Project Image" class="w-full h-64 object-cover object-top rounded-t-xl">
+        <a href="/projects/{{project['project-slug']}}/" class="flex flex-col">
+          <img src="/projects/{{project['project-slug']}}/img/{{project.image}}" alt="Project Image" class=" w-full aspect-video object-cover object-top rounded-t-xl">
           <div class="grow shrink flex flex-col justify-between p-6">
             <div>
               <h4 class="text-xl font-bold mt-4">{{project.title}}</h4>
