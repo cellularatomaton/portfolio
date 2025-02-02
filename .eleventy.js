@@ -60,9 +60,61 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  eleventyConfig.addCollection("skillCounts", function (collectionApi) {
+    const skillCounts = {};
+
+    portfolio.forEach(project => {
+      if (project.skills) {
+        project.skills.forEach(skill => {
+          skillCounts[skill] = (skillCounts[skill] || 0) + 1;
+        });
+      }
+    });
+    
+    return Object.entries(skillCounts)
+      .map(([skill, count]) => ({ skill, count }))
+      .sort((a, b) => b.count - a.count);
+  });
+
+  eleventyConfig.addCollection("toolCounts", function (collectionApi) {
+    const toolCounts = {};
+
+    portfolio.forEach(project => {
+      
+      if (project.tools) {
+        project.tools.forEach(tool => {
+          toolCounts[tool] = (toolCounts[tool] || 0) + 1;
+        });
+      }
+    });
+    return Object.entries(toolCounts)
+      .map(([tool, count]) => ({ tool, count }))
+      .sort((a, b) => b.count - a.count);
+  });
+
+  eleventyConfig.addCollection("languageCounts", function (collectionApi) {
+    const languageCounts = {};
+
+    portfolio.forEach(project => {
+      if (project.languages) {
+        project.languages.forEach(language => {
+          languageCounts[language] = (languageCounts[language] || 0) + 1;
+        });
+      }
+    });
+    
+    return Object.entries(languageCounts)
+      .map(([language, count]) => ({ language, count }))
+      .sort((a, b) => b.count - a.count);
+  });
+
   eleventyConfig.addPassthroughCopy('./src/img');
   eleventyConfig.setServerOptions({
     watch: ['./public/css/styles.css']
+  });
+
+  eleventyConfig.addFilter("jsonify", function(obj) {
+    return JSON.stringify(obj);
   });
 
   eleventyConfig.addFilter("filterByCompany", (projects, companySlug) => {
@@ -74,6 +126,7 @@ module.exports = function(eleventyConfig) {
   });
 
   return {
+    markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     dir: {
       input: 'src',

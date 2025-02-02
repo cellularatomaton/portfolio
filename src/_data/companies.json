@@ -31,21 +31,21 @@
         "title": "President & Business Strategist",
         "subtitle": "Perception Farms: Chicago, IL",
         "date": "2019 –  present",
-        "image": "perception.png",
+        "image": "perception-farms.png",
         "slug": "pfi",
         "description": "I led the growth of a vertically integrated cannabis business, managing product development, compliance, and operations. I drove business growth through strategic partnerships, while ensuring regulatory compliance and operational efficiency."
     },{
         "title": "COO & Technical Lead",
         "subtitle": "Perception Cannabis: Chicago, IL",
         "date": "2019 –  present",
-        "image": "perception.png",
+        "image": "perception-cannabis.png",
         "slug": "pccs",
         "description": "I led Perception Cannabis in its founding, development, startup and operations.  As COO I have leveraged my technical background to automate much of our operations, streamlining processes and maximizing profit margins."
     },{
         "title": "President & Technical Lead",
-        "subtitle": "Perception Cannabis: Chicago, IL",
+        "subtitle": "Perception Gardens: Chicago, IL",
         "date": "2020 –  present",
-        "image": "perception.png",
+        "image": "perception-gardens.png",
         "slug": "pgc",
         "description": "I led Perception Gardens in its founding, development, startup and operations."
     },{
@@ -73,7 +73,7 @@
         "title": "Director Of Software Development",
         "subtitle": "Hanley Group: Chicago, IL",
         "date": "Jun 2010 - Jan 2012",
-        "image": "hanley.png",
+        "image": "intl-hanley.jpg",
         "slug": "hgc",
         "description": "As INTL Hanley Director Of Software Development (Jun 2010 - Jan 2012): Developed, managed, operated and delivered C#, WPF, FIX/FAST based high frequency trading platform for proprietary market making in the futures and options markets. Designed and implemented C#, WCF and MVC based web application for OTC term structured derivatives valuation and book management."
     },{

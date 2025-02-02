@@ -1,0 +1,96 @@
+---
+layout: base.njk
+title: Portfolio - Walter Moore
+---
+
+<!-- About Section -->
+<section id="about" class="py-16">
+  <div class="container mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-8">Let's Connect!</h3>
+    <div class="w-full flex flex-row justify-center">
+      <img src="/img/pfp.jpg" alt="Your Bio Picture" class="w-48 h-48 rounded-full shadow-lg">
+    </div>
+    <div class="mt-10 flex flex-col gap-4 w-full">
+      <p class="mt-4 text-lg text-justify text-gray-700">
+          {{about['contact-intro']}}
+      </p>
+      <h3><span class="font-bold">LinkedIn: </span><a class="underline" href="{{about['linked-in-url']}}" target="_blank">{{about['linked-in-url']}}</a></h3>
+      <h3><span class="font-bold">GitHub: </span><a class="underline" href="{{about['github-url']}}" target="_blank">{{about['github-url']}}</a></h3>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="bg-gray-50 py-16">
+  <div class="container mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center">Contact Me</h3>
+    <form class="mt-10 max-w-xl mx-auto bg-white p-6 rounded shadow">
+      <div class="mb-4">
+        <label for="name" class="block text-gray-700 font-bold">Name</label>
+        <input type="text" id="name" class="w-full mt-2 p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+      <div class="mb-4">
+        <label for="email" class="block text-gray-700 font-bold">Email</label>
+        <input type="email" id="email" class="w-full mt-2 p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+      <div class="mb-4">
+        <label for="message" class="block text-gray-700 font-bold">Message</label>
+        <textarea id="message" rows="4" class="w-full mt-2 p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      </div>
+      <button type="submit" class="w-full bg-blue-500 text-white py-3 rounded hover:bg-blue-600">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<script>
+  // Select the form element
+  const form = document.querySelector("#contact form");
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault(); // Prevent default form submission behavior
+
+    // Get form data
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    // Validate inputs (optional but recommended)
+    if (!name || !email || !message) {
+      alert("Please fill out all fields.");
+      return;
+    }
+
+    // Display a loading state (optional)
+    const submitButton = form.querySelector("button[type='submit']");
+    submitButton.textContent = "Sending...";
+    submitButton.disabled = true;
+
+    try {
+      // Send the data to the backend
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, message }),
+      });
+
+      // Handle the response
+      if (response.ok) {
+        alert("Message sent successfully!");
+        form.reset(); // Clear the form
+      } else {
+        const errorData = await response.json();
+        console.error("Error response:", errorData);
+        alert("Failed to send message. Please try again later.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("An error occurred. Please try again.");
+    } finally {
+      // Reset button state
+      submitButton.textContent = "Send Message";
+      submitButton.disabled = false;
+    }
+  });
+</script>

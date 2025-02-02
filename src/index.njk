@@ -7,164 +7,232 @@ title: Portfolio - Walter Moore
   <div class="container mx-auto px-6 text-center">
     <h2 class="text-4xl font-extrabold">Bridging Technology and Business</h2>
     <p class="mt-4 text-lg">Entrepreneurial Engineer & Business Strategist. Leadership in SaaS, Innovation, & Client Solutions</p>
-    <a href="#contact" class="mt-6 inline-block bg-white text-blue-500 px-6 py-3 rounded shadow hover:bg-gray-100">Let's Connect</a>
+    <a href="/contact" class="mt-6 inline-block bg-white text-blue-500 px-6 py-3 rounded shadow hover:bg-gray-100">Let's Connect</a>
   </div>
 </section>
 
 <!-- About Section -->
 <section id="about" class="py-16">
   <div class="container mx-auto px-6">
-    <h3 class="text-3xl font-bold text-center">About Me</h3>
-    <div class="mt-10 flex flex-col lg:flex-row gap-8 w-full">
-      <div class="grow basis-1 flex flex-row justify-center items-center lg:justify-start">
-        <img src="img/pfp.jpg" alt="Your Bio Picture" class="w-48 h-48 rounded-full shadow-lg">
-      </div>
-      <div class="grow basis-1">
-        <p class="mt-4 text-lg text-justify text-gray-700">
+    <h3 class="text-3xl font-bold text-center mb-8">About Me</h3>
+    <div class="w-full flex flex-row justify-center">
+      <img src="/img/pfp.jpg" alt="Your Bio Picture" class="w-48 h-48 rounded-full shadow-lg">
+    </div>
+    <div class="mt-10 flex flex-col gap-4 w-full">
+      <p class="mt-4 text-lg text-justify text-gray-700">
           {{about.introduction}}
-        </p>
-      </div>
+      </p>
+      <h3><span class="font-bold">LinkedIn: </span><a class="underline" href="{{about['linked-in-url']}}" target="_blank">{{about['linked-in-url']}}</a></h3>
+      <h3><span class="font-bold">GitHub: </span><a class="underline" href="{{about['github-url']}}" target="_blank">{{about['github-url']}}</a></h3>
     </div>
   </div>
 </section>
 
-<!-- Timeline Section -->
-<section id="timeline" class="py-16 bg-gray-50">
-  <div class="container mx-auto px-6">
-    <h3 class="text-3xl font-bold text-center">Work History</h3>
-    <div class="mt-10 relative border-l-2 border-blue-500">
-      {% for company in companies %}
-      <div class="mb-8 mx-6 flex items-center">
-      
-        <!-- Timeline Marker -->
-        <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-2.5 border border-white"></div>
-        <a class="w-full" href="/companies/{{company['slug']}}/" >
-          <div class="flex flex-row items-stretch rounded-lg shadow-lg border border-gray-200">
-          <!-- Company Content -->
-          <div class="grow shrink flex-col p-4">
-            <div class="flex flex-row justify-between gap-4">
-              <div class="flex flex-col">
-                <h4 class="text-xl font-semibold">{{ company.title }}</h4>
-                <p class="text-gray-600">{{ company.subtitle }}</p>
-                <span class="text-sm text-gray-500">{{ company.date }}</span>
-              </div>
-              <div class="flex md:hidden flex-col justify-center bg-white max-h-24 max-w-32 rounded-lg flex-none p-2">
-                <img src="/img/{{ company.image }}" alt="{{ company.title }}" class="object-contain">
-              </div>
-            </div>
-            <p class="mt-2 text-gray-700 text-justify">{{ company.description }}</p>
-          </div>
-          <!-- Company Image -->
-          <div class="hidden md:flex flex-col justify-center bg-white w-48 flex-none p-8">
-            <img src="/img/{{ company.image }}" alt="{{ company.title }}" class="object-contain">
-          </div>
-        </div>
-        </a>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<!-- Portfolio Section -->
+<!-- Navigation Section -->
 <section id="projects" class="py-16">
   <div class="container mx-auto px-6">
-    <h3 class="text-3xl font-bold text-center">Project Portfolio</h3>
+    <h3 class="text-3xl font-bold text-center">LEARN MORE</h3>
     <div class="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-      {% for project in portfolio %}
-      
       <div class="bg-white flex flex-col rounded-xl border border-2 h-full">
-        <a href="/projects/{{project['project-slug']}}/" class="flex flex-col">
-          <img src="/projects/{{project['project-slug']}}/img/{{project.image}}" alt="Project Image" class=" w-full aspect-video object-cover object-top rounded-t-xl">
+        <a href="/experience" class="flex flex-col">
+          <img src="/img/experience.webp" alt="Project Image" class=" w-full aspect-square object-cover object-top rounded-t-xl">
           <div class="grow shrink flex flex-col justify-between p-6">
-            <div>
-              <h4 class="text-xl font-bold mt-4">{{project.title}}</h4>
-              <p class="line-clamp-4 mt-2 text-gray-700 text-justify">{{project.description}}</p>
-            </div>
-            <div class="mt-4 flex flex-wrap-reverse gap-2 justify-end items-end">
-              {% for skill in project.skills %}
-              <span class="px-3 py-1 text-sm bg-blue-100 text-blue-700 rounded-full">{{skill}}</span>
-              {% endfor %}
+            <div class="flex flex-row justify-center">
+              <h4 class="text-xl font-bold mt-4">EXPERIENCE</h4>
             </div>
           </div>
         </a>
       </div>
-      {% endfor %}
+      <div class="bg-white flex flex-col rounded-xl border border-2 h-full">
+        <a href="/portfolio" class="flex flex-col">
+          <img src="/img/project.webp" alt="Project Image" class=" w-full aspect-square object-cover object-top rounded-t-xl">
+          <div class="grow shrink flex flex-col justify-between p-6">
+            <div class="flex flex-row justify-center">
+              <h4 class="text-xl font-bold mt-4">PORTFOLIO</h4>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="bg-white flex flex-col rounded-xl border border-2 h-full">
+        <a href="/contact" class="flex flex-col">
+          <img src="/img/contact.webp" alt="Project Image" class=" w-full aspect-square object-cover object-top rounded-t-xl">
+          <div class="grow shrink flex flex-col justify-between p-6">
+            <div class="flex flex-row justify-center">
+              <h4 class="text-xl font-bold mt-4">CONTACT</h4>
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact" class="bg-gray-50 py-16">
+<section id="skill-chart" class="py-16">
   <div class="container mx-auto px-6">
-    <h3 class="text-3xl font-bold text-center">Contact Me</h3>
-    <form class="mt-10 max-w-xl mx-auto bg-white p-6 rounded shadow">
-      <div class="mb-4">
-        <label for="name" class="block text-gray-700 font-bold">Name</label>
-        <input type="text" id="name" class="w-full mt-2 p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
-      </div>
-      <div class="mb-4">
-        <label for="email" class="block text-gray-700 font-bold">Email</label>
-        <input type="email" id="email" class="w-full mt-2 p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
-      </div>
-      <div class="mb-4">
-        <label for="message" class="block text-gray-700 font-bold">Message</label>
-        <textarea id="message" rows="4" class="w-full mt-2 p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-      </div>
-      <button type="submit" class="w-full bg-blue-500 text-white py-3 rounded hover:bg-blue-600">Send Message</button>
-    </form>
+    <h2 class="text-2xl text-center font-bold">Project Count By Skill</h2>
+    <canvas id="skillsChart" class=""></canvas>
   </div>
 </section>
 
+<section id="tool-chart" class="py-16">
+  <div class="container mx-auto px-6">
+    <h2 class="text-2xl text-center font-bold">Project Count By Tool</h2>
+    <canvas id="toolsChart" class=""></canvas>
+  </div>
+</section>
+
+<section id="language-chart" class="py-16">
+  <div class="container mx-auto px-6">
+    <h2 class="text-2xl text-center font-bold">Project Count By Language</h2>
+    <canvas id="languagesChart" class=""></canvas>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 <script>
-  // Select the form element
-  const form = document.querySelector("#contact form");
+  window.skillCounts = {{ collections.skillCounts | jsonify | safe }};
+  document.addEventListener("DOMContentLoaded", () => {
+  if (!window.skillCounts) {
+    console.error("Skill data not found!");
+    return;
+  }
 
-  form.addEventListener("submit", async (event) => {
-    event.preventDefault(); // Prevent default form submission behavior
+  const labels = window.skillCounts.map(item => item.skill);
+  const data = window.skillCounts.map(item => item.count);
 
-    // Get form data
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
+  const ctx = document.getElementById("skillsChart").getContext("2d");
 
-    // Validate inputs (optional but recommended)
-    if (!name || !email || !message) {
-      alert("Please fill out all fields.");
-      return;
-    }
-
-    // Display a loading state (optional)
-    const submitButton = form.querySelector("button[type='submit']");
-    submitButton.textContent = "Sending...";
-    submitButton.disabled = true;
-
-    try {
-      // Send the data to the backend
-      const response = await fetch("/api/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+  new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: labels,
+      datasets: [
+        {
+          label: "Skill Count",
+          data: data,
+          backgroundColor: "oklch(0.932 0.032 255.585)",
+          borderColor: "oklch(0.488 0.243 264.376)",
+          borderWidth: 1
+        }
+      ]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: true,
+      onClick: (event, elements) => {
+        if (elements.length > 0) {
+          const index = elements[0].index;
+          const skill = labels[index];
+          window.location.href = `/portfolio?skill=${encodeURIComponent(skill)}`;
+        }
+      },
+      
+      plugins: {
+        legend: {
+          display: false // 👈 Hides the legend
         },
-        body: JSON.stringify({ name, email, message }),
-      });
-
-      // Handle the response
-      if (response.ok) {
-        alert("Message sent successfully!");
-        form.reset(); // Clear the form
-      } else {
-        const errorData = await response.json();
-        console.error("Error response:", errorData);
-        alert("Failed to send message. Please try again later.");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      alert("An error occurred. Please try again.");
-    } finally {
-      // Reset button state
-      submitButton.textContent = "Send Message";
-      submitButton.disabled = false;
+      },
     }
   });
+});
+</script>
+
+<script>
+  window.toolCounts = {{ collections.toolCounts | jsonify | safe }};
+  document.addEventListener("DOMContentLoaded", () => {
+  if (!window.toolCounts) {
+    console.error("Tool data not found!");
+    return;
+  }
+
+  const labels = window.toolCounts.map(item => item.tool);
+  const data = window.toolCounts.map(item => item.count);
+
+  const ctx = document.getElementById("toolsChart").getContext("2d");
+
+  new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: labels,
+      datasets: [
+        {
+          label: "Tool Count",
+          data: data,
+          backgroundColor: "oklch(0.973 0.071 103.193)",
+          borderColor: "oklch(0.554 0.135 66.442)",
+          borderWidth: 1
+        }
+      ]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: true,
+      onClick: (event, elements) => {
+        if (elements.length > 0) {
+          const index = elements[0].index;
+          const tool = labels[index];
+          window.location.href = `/portfolio?tool=${encodeURIComponent(tool)}`;
+        }
+      },
+      
+      plugins: {
+        legend: {
+          display: false // 👈 Hides the legend
+        },
+      },
+    }
+  });
+});
+</script>
+
+<script>
+  window.languageCounts = {{ collections.languageCounts | jsonify | safe }};
+  document.addEventListener("DOMContentLoaded", () => {
+  if (!window.languageCounts) {
+    console.error("Language data not found!");
+    return;
+  }
+
+  const labels = window.languageCounts.map(item => item.language);
+  const data = window.languageCounts.map(item => item.count);
+
+  const ctx = document.getElementById("languagesChart").getContext("2d");
+
+  new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: labels,
+      datasets: [
+        {
+          label: "Language Count",
+          data: data,
+          backgroundColor: "oklch(0.962 0.044 156.743)",
+          borderColor: "oklch(0.527 0.154 150.069)",
+          borderWidth: 1
+        }
+      ]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: true,
+      onClick: (event, elements) => {
+        if (elements.length > 0) {
+          const index = elements[0].index;
+          const language = labels[index];
+          window.location.href = `/portfolio?language=${encodeURIComponent(language)}`;
+        }
+      },
+      
+      plugins: {
+        legend: {
+          display: false // 👈 Hides the legend
+        },
+      },
+    }
+  });
+});
 </script>

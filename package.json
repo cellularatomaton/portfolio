@@ -1,7 +1,7 @@
 {
   "name": "jet",
   "version": "6.0.0",
-  "description": "It's (j)ust (e)leventy and (t)ailwind … OK, and a few other things; it's still *really* small though.",
+  "description": "Walter Moore: Experience, Projects and Contact",
   "scripts": {
     "clean": "rimraf public",
     "dev:tailwind": "npx tailwindcss -i src/css/tailwind.css -o public/css/styles.css --watch",
