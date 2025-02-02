@@ -70,21 +70,27 @@ title: Portfolio - Walter Moore
 <section id="skill-chart" class="py-16">
   <div class="container mx-auto px-6">
     <h2 class="text-2xl text-center font-bold">Project Count By Skill</h2>
-    <canvas id="skillsChart" class=""></canvas>
+    <div class="chart-container w-full max-w-5xl h-[500px] mx-auto">
+      <canvas id="skillsChart"></canvas>
+    </div>
   </div>
 </section>
 
 <section id="tool-chart" class="py-16">
   <div class="container mx-auto px-6">
     <h2 class="text-2xl text-center font-bold">Project Count By Tool</h2>
-    <canvas id="toolsChart" class=""></canvas>
+    <div class="chart-container w-full max-w-5xl h-[800px] mx-auto">
+      <canvas id="toolsChart"></canvas>
+    </div>
   </div>
 </section>
 
 <section id="language-chart" class="py-16">
   <div class="container mx-auto px-6">
     <h2 class="text-2xl text-center font-bold">Project Count By Language</h2>
-    <canvas id="languagesChart" class=""></canvas>
+    <div class="chart-container w-full max-w-5xl h-[500px] mx-auto">
+      <canvas id="languagesChart"></canvas>
+    </div>
   </div>
 </section>
 
@@ -120,7 +126,7 @@ title: Portfolio - Walter Moore
     options: {
       indexAxis: 'y',
       responsive: true,
-      maintainAspectRatio: true,
+      maintainAspectRatio: false,
       onClick: (event, elements) => {
         if (elements.length > 0) {
           const index = elements[0].index;
@@ -169,7 +175,7 @@ title: Portfolio - Walter Moore
     options: {
       indexAxis: 'y',
       responsive: true,
-      maintainAspectRatio: true,
+      maintainAspectRatio: false,
       onClick: (event, elements) => {
         if (elements.length > 0) {
           const index = elements[0].index;
@@ -218,7 +224,7 @@ title: Portfolio - Walter Moore
     options: {
       indexAxis: 'y',
       responsive: true,
-      maintainAspectRatio: true,
+      maintainAspectRatio: false,
       onClick: (event, elements) => {
         if (elements.length > 0) {
           const index = elements[0].index;
