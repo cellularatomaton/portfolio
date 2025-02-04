@@ -2,8 +2,12 @@
 const fs = require("fs");
 const path = require("path");
 const markdownIt = require("markdown-it");
+const tailwindConfig = require("./tailwind.config.js");
 
 module.exports = function(eleventyConfig) {
+
+  eleventyConfig.addGlobalData("tailwindColors", tailwindConfig.exportedColors);
+
   const companiesData = require("./src/_data/companies.json");
   eleventyConfig.addCollection("companies", function () {
     return companiesData;
@@ -124,6 +128,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("findCompany", (slug, companies) => {
     return companies.find(company => company.slug === slug);
   });
+
+  
 
   return {
     markdownTemplateEngine: "njk",

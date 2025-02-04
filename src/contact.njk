@@ -11,7 +11,7 @@ title: Portfolio - Walter Moore
       <img src="/img/pfp.jpg" alt="Your Bio Picture" class="w-48 h-48 rounded-full shadow-lg">
     </div>
     <div class="mt-10 flex flex-col gap-4 w-full">
-      <p class="mt-4 text-lg text-justify text-gray-700">
+      <p class="mt-4 text-lg text-justify">
           {{about['contact-intro']}}
       </p>
       <h3><span class="font-bold">LinkedIn: </span><a class="underline" href="{{about['linked-in-url']}}" target="_blank">{{about['linked-in-url']}}</a></h3>
@@ -21,23 +21,23 @@ title: Portfolio - Walter Moore
 </section>
 
 <!-- Contact Section -->
-<section id="contact" class="bg-gray-50 py-16">
+<section id="contact" class="py-16">
   <div class="container mx-auto px-6">
     <h3 class="text-3xl font-bold text-center">Contact Me</h3>
-    <form class="mt-10 max-w-xl mx-auto bg-white p-6 rounded shadow">
+    <form class="mt-10 max-w-xl mx-auto p-6 rounded shadow">
       <div class="mb-4">
-        <label for="name" class="block text-gray-700 font-bold">Name</label>
+        <label for="name" class="block font-bold">Name</label>
         <input type="text" id="name" class="w-full mt-2 p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
       </div>
       <div class="mb-4">
-        <label for="email" class="block text-gray-700 font-bold">Email</label>
+        <label for="email" class="block font-bold">Email</label>
         <input type="email" id="email" class="w-full mt-2 p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
       </div>
       <div class="mb-4">
-        <label for="message" class="block text-gray-700 font-bold">Message</label>
+        <label for="message" class="block font-bold">Message</label>
         <textarea id="message" rows="4" class="w-full mt-2 p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
       </div>
-      <button type="submit" class="w-full bg-blue-500 text-white py-3 rounded hover:bg-blue-600">Send Message</button>
+      <button type="submit" class="w-full bg-minimal-primary py-3 rounded hover:bg-minimal-blue">Send Message</button>
     </form>
   </div>
 </section>

@@ -7,7 +7,7 @@ title: Portfolio - Walter Moore
   <div class="container mx-auto px-6 text-center">
     <h2 class="text-4xl font-extrabold">Bridging Technology and Business</h2>
     <p class="mt-4 text-lg">Entrepreneurial Engineer & Business Strategist. Leadership in SaaS, Innovation, & Client Solutions</p>
-    <a href="/contact" class="mt-6 inline-block bg-white text-blue-500 px-6 py-3 rounded shadow hover:bg-gray-100">Let's Connect</a>
+    <a href="/contact" class="mt-6 inline-block bg-white text-minimal-primary px-6 py-3 rounded shadow hover:bg-gray-100">Let's Connect</a>
   </div>
 </section>
 
@@ -19,7 +19,7 @@ title: Portfolio - Walter Moore
       <img src="/img/pfp.jpg" alt="Your Bio Picture" class="w-48 h-48 rounded-full shadow-lg">
     </div>
     <div class="mt-10 flex flex-col gap-4 w-full">
-      <p class="mt-4 text-lg text-justify text-gray-700">
+      <p class="mt-4 text-lg text-justify">
           {{about.introduction}}
       </p>
       <h3><span class="font-bold">LinkedIn: </span><a class="underline" href="{{about['linked-in-url']}}" target="_blank">{{about['linked-in-url']}}</a></h3>
@@ -33,7 +33,7 @@ title: Portfolio - Walter Moore
   <div class="container mx-auto px-6">
     <h3 class="text-3xl font-bold text-center">LEARN MORE</h3>
     <div class="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-      <div class="bg-white flex flex-col rounded-xl border border-2 h-full">
+      <div class="flex flex-col rounded-xl border border-2 h-full">
         <a href="/experience" class="flex flex-col">
           <img src="/img/experience.webp" alt="Project Image" class=" w-full aspect-square object-cover object-top rounded-t-xl">
           <div class="grow shrink flex flex-col justify-between p-6">
@@ -43,7 +43,7 @@ title: Portfolio - Walter Moore
           </div>
         </a>
       </div>
-      <div class="bg-white flex flex-col rounded-xl border border-2 h-full">
+      <div class="flex flex-col rounded-xl border border-2 h-full">
         <a href="/portfolio" class="flex flex-col">
           <img src="/img/project.webp" alt="Project Image" class=" w-full aspect-square object-cover object-top rounded-t-xl">
           <div class="grow shrink flex flex-col justify-between p-6">
@@ -53,7 +53,7 @@ title: Portfolio - Walter Moore
           </div>
         </a>
       </div>
-      <div class="bg-white flex flex-col rounded-xl border border-2 h-full">
+      <div class="flex flex-col rounded-xl border border-2 h-full">
         <a href="/contact" class="flex flex-col">
           <img src="/img/contact.webp" alt="Project Image" class=" w-full aspect-square object-cover object-top rounded-t-xl">
           <div class="grow shrink flex flex-col justify-between p-6">
@@ -96,6 +96,22 @@ title: Portfolio - Walter Moore
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
+<!-- Inject Tailwind colors dynamically -->
+<script>
+    window.tailwindColors = {{ tailwindColors | dump | safe }};
+    console.log("Tailwind Colors:", window.tailwindColors);
+    const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches || document.documentElement.classList.contains("dark");
+    console.log("isDarkMode", isDarkMode)
+    const textColor = isDarkMode
+      ? window.tailwindColors.white
+      : window.tailwindColors.black;
+    {# Chart.defaults.backgroundColor = '#9BD0F5';
+    Chart.defaults.borderColor = '#36A2EB'; #}
+    Chart.defaults.color = textColor;
+</script>
+
+
+
 <script>
   window.skillCounts = {{ collections.skillCounts | jsonify | safe }};
   document.addEventListener("DOMContentLoaded", () => {
@@ -117,8 +133,8 @@ title: Portfolio - Walter Moore
         {
           label: "Skill Count",
           data: data,
-          backgroundColor: "oklch(0.932 0.032 255.585)",
-          borderColor: "oklch(0.488 0.243 264.376)",
+          backgroundColor: window.tailwindColors.blue,
+          borderColor: window.tailwindColors.blueDark,
           borderWidth: 1
         }
       ]
@@ -166,8 +182,8 @@ title: Portfolio - Walter Moore
         {
           label: "Tool Count",
           data: data,
-          backgroundColor: "oklch(0.973 0.071 103.193)",
-          borderColor: "oklch(0.554 0.135 66.442)",
+          backgroundColor: window.tailwindColors.yellow,
+          borderColor: window.tailwindColors.yellowDark,
           borderWidth: 1
         }
       ]
@@ -215,8 +231,8 @@ title: Portfolio - Walter Moore
         {
           label: "Language Count",
           data: data,
-          backgroundColor: "oklch(0.962 0.044 156.743)",
-          borderColor: "oklch(0.527 0.154 150.069)",
+          backgroundColor: window.tailwindColors.green,
+          borderColor: window.tailwindColors.greenDark,
           borderWidth: 1
         }
       ]
