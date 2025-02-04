@@ -81,8 +81,8 @@
 
         // Loop through each link and check if it matches the current path
         navLinks.forEach(link => {
-          console.log(`currentPath=${currentPath}, href=${link.getAttribute("href")}`)
-          if ( currentPath.slice(0,-1) === link.getAttribute("href") ) {
+          //console.log(`currentPath=${currentPath}, href=${link.getAttribute("href")}`)
+          if ( currentPath.slice(0,-1) === link.getAttribute("href") || currentPath === link.getAttribute("href") ) {
             link.classList.add("text-minimal-primary");
           }
         });
