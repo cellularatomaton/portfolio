@@ -3,11 +3,11 @@ layout: base.njk
 title: Portfolio - Walter Moore
 ---
 <!-- Hero Section -->
-<section id="hero" class="bg-gradient-to-r from-blue-500 to-teal-400 text-white py-16">
+<section id="hero" class="bg-gradient-to-r from-minimal-secondary to-minimal-charcoal text-white py-16">
   <div class="container mx-auto px-6 text-center">
     <h2 class="text-4xl font-extrabold">Bridging Technology and Business</h2>
     <p class="mt-4 text-lg">Entrepreneurial Engineer & Business Strategist. Leadership in SaaS, Innovation, & Client Solutions</p>
-    <a href="/contact" class="mt-6 inline-block bg-white text-minimal-primary px-6 py-3 rounded shadow hover:bg-gray-100">Let's Connect</a>
+    <a href="/contact" class="mt-6 inline-block bg-white text-minimal-primary px-6 py-3 rounded-xl shadow hover:bg-gray-100">Let's Connect</a>
   </div>
 </section>
 
@@ -22,8 +22,8 @@ title: Portfolio - Walter Moore
       <p class="mt-4 text-lg text-justify">
           {{about.introduction}}
       </p>
-      <h3><span class="font-bold">LinkedIn: </span><a class="underline" href="{{about['linked-in-url']}}" target="_blank">{{about['linked-in-url']}}</a></h3>
-      <h3><span class="font-bold">GitHub: </span><a class="underline" href="{{about['github-url']}}" target="_blank">{{about['github-url']}}</a></h3>
+      <h3><span class="font-bold">LinkedIn: </span><a class="text-minimal-primary underline hover:text-minimal-blue" href="{{about['linked-in-url']}}" target="_blank">{{about['linked-in-url']}}</a></h3>
+      <h3><span class="font-bold">GitHub: </span><a class="text-minimal-primary underline hover:text-minimal-blue" href="{{about['github-url']}}" target="_blank">{{about['github-url']}}</a></h3>
     </div>
   </div>
 </section>
