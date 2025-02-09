@@ -20,9 +20,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
     <link rel="manifest" href="/img/site.webmanifest">
   </head>
-  <body class="text-minimal-black dark:text-minimal-white bg-minimal-white dark:bg-minimal-black">
+  <body class="text-minimal-primaryDark dark:text-minimal-secondaryLight bg-minimal-secondaryLight dark:bg-minimal-black">
     <!-- Header -->
-    <header class=" bg-minimal-white dark:bg-minimal-black shadow sticky top-0 z-50">
+    <header class=" bg-minimal-secondaryLight dark:bg-minimal-black shadow sticky top-0 z-50">
       <div class="container mx-auto px-6 py-4 flex justify-between items-center">
         <a href="/">
           <img src="/img/waltermoore.png" alt="{{ project.title }}" class="w-64"/>
@@ -42,7 +42,7 @@
         <!-- Navigation -->
         <nav 
           id="nav-menu" 
-          class="hidden lg:block absolute top-full left-0 lg:static lg:flex w-full lg:w-auto bg-minimal-white dark:bg-minimal-black lg:bg-transparent border-t-2 lg:border-t-0 shadow-md lg:shadow-none"
+          class="hidden lg:block absolute top-full left-0 lg:static lg:flex w-full lg:w-auto bg-minimal-secondaryLight dark:bg-minimal-black lg:bg-transparent border-t-2 lg:border-t-0 shadow-md lg:shadow-none"
         >
           <ul class="w-[250px] mx-auto my-8 lg:my-0 lg:w-auto lg:mx-0 flex flex-col lg:flex-row items-center lg:space-x-6">
             <li><a href="/" class="nav-link block px-6 py-2 hover:text-minimal-primary">About</a></li>
@@ -83,7 +83,7 @@
         navLinks.forEach(link => {
           //console.log(`currentPath=${currentPath}, href=${link.getAttribute("href")}`)
           if ( currentPath.slice(0,-1) === link.getAttribute("href") || currentPath === link.getAttribute("href") ) {
-            link.classList.add("text-minimal-primary");
+            link.classList.add("underline text-minimal-secondaryLight dark:text-minimal-primary");
           }
         });
       });

@@ -6,12 +6,12 @@ title: Portfolio - Walter Moore
 <!-- About Section -->
 <section id="about" class="py-16">
   <div class="container mx-auto px-6">
-    <h3 class="text-3xl font-bold text-center mb-8">My Project Portfolio</h3>
-    <div class="w-full flex flex-row justify-center">
-    <img src="/img/pfp.jpg" alt="Your Bio Picture" class="w-48 h-48 rounded-full shadow-lg">
+    <h3 class="text-3xl font-bold text-center mb-12">My Project Portfolio</h3>
+    <div class="w-full flex flex-row justify-center mb-12">
+    <img src="/img/pfp.jpg" alt="Your Bio Picture" class="w-48 h-48 border-4 border-minimal-primary dark:border-minimal-secondaryLight rounded-full shadow-lg">
     </div>
-    <div class="mt-10 flex flex-col lg:flex-row gap-8 w-full">
-      <p class="mt-4 text-lg text-justify">
+    <div class="flex flex-col lg:flex-row gap-8 w-full">
+      <p class="text-lg text-justify">
           {{about['portfolio-intro']}}
       </p>
     </div>
@@ -21,12 +21,12 @@ title: Portfolio - Walter Moore
 <!-- Portfolio Section -->
 <section id="projects" class="py-16">
   <div class="container mx-auto px-6">
-    <div class="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       {% for project in portfolio %}
       
-      <div class="flex flex-col rounded-xl border border-2 h-full">
+      <div class="flex flex-col rounded-xl border border-2 border-minimal-primary dark:border-minimal-secondaryLight h-full">
         <a href="/projects/{{project['project-slug']}}/" class="flex flex-col">
-          <img src="/projects/{{project['project-slug']}}/img/{{project.image}}" alt="Project Image" class=" w-full aspect-square object-cover rounded-t-xl">
+          <img src="/projects/{{project['project-slug']}}/img/{{project.image}}" alt="Project Image" class=" w-full aspect-square object-cover rounded-t-lg">
           <div class="grow shrink flex flex-col justify-between p-6">
             <div>
               <h4 class="text-xl font-bold mt-4">{{project.title}}</h4>

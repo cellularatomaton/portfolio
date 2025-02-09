@@ -11,6 +11,7 @@ const colors = {
   secondary: "#C2A878",
   secondaryDark: "#8B7351",
   secondaryLight: "#E8D5B9",
+  
   blue: "#8AA4C8", // Muted Blue
   blueDark: "#4F6B8C", // Darker variant for text
 

@@ -6,12 +6,12 @@ title: Portfolio - Walter Moore
 <!-- About Section -->
 <section id="about" class="py-16">
   <div class="container mx-auto px-6">
-    <h3 class="text-3xl font-bold text-center mb-8">Companies I Have Worked With</h3>
-    <div class="w-full flex flex-row justify-center">
-      <img src="/img/pfp.jpg" alt="Your Bio Picture" class="w-48 h-48 rounded-full shadow-lg">
+    <h3 class="text-3xl font-bold text-center mb-12">Companies I Have Worked With</h3>
+    <div class="w-full flex flex-row justify-center mb-12">
+      <img src="/img/pfp.jpg" alt="Your Bio Picture" class="w-48 h-48 border-4 border-minimal-primary dark:border-minimal-secondaryLight rounded-full shadow-lg">
     </div>
-    <div class="mt-10 flex flex-col lg:flex-row gap-8 w-full">
-      <p class="mt-4 text-lg text-justify">
+    <div class="flex flex-col lg:flex-row gap-8 w-full">
+      <p class="text-lg text-justify">
           {{about['experience-intro']}}
       </p>
     </div>
@@ -21,14 +21,14 @@ title: Portfolio - Walter Moore
 <!-- Timeline Section -->
 <section id="timeline" class="py-16">
   <div class="container mx-auto px-6">
-    <div class="mt-10 relative border-l-2 border-minimal-primary">
+    <div class="relative border-l-2 border-minimal-primary">
       {% for company in companies %}
       <div class="mb-8 mx-6 flex items-center">
       
         <!-- Timeline Marker -->
-        <div class="absolute w-4 h-4 bg-minimal-secondary rounded-full -left-2.5 border border-white"></div>
+        <div class="absolute w-4 h-4 bg-minimal-secondary rounded-full -left-2.5 border border-minimal-primaryDark"></div>
         <a class="w-full" href="/companies/{{company['slug']}}/" >
-          <div class="flex flex-row items-stretch rounded-lg shadow-lg border border-gray-200">
+          <div class="flex flex-row items-stretch rounded-xl shadow-lg border-2 border-minimal-primary dark:border-minimal-secondaryLight">
           <!-- Company Content -->
           <div class="grow shrink flex-col p-4">
             <div class="flex flex-row justify-between gap-4">
@@ -44,7 +44,7 @@ title: Portfolio - Walter Moore
             <p class="mt-2 text-justify">{{ company.description }}</p>
           </div>
           <!-- Company Image -->
-          <div class="hidden md:flex flex-col justify-center w-48 bg-white flex-none p-8">
+          <div class="hidden md:flex flex-col justify-center w-48 bg-white flex-none p-8 rounded-r-lg">
             <img src="/img/{{ company.image }}" alt="{{ company.title }}" class="object-contain">
           </div>
         </div>

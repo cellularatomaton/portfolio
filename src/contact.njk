@@ -6,16 +6,16 @@ title: Portfolio - Walter Moore
 <!-- About Section -->
 <section id="about" class="py-16">
   <div class="container mx-auto px-6">
-    <h3 class="text-3xl font-bold text-center mb-8">Let's Connect!</h3>
-    <div class="w-full flex flex-row justify-center">
-      <img src="/img/pfp.jpg" alt="Your Bio Picture" class="w-48 h-48 rounded-full shadow-lg">
+    <h3 class="text-3xl font-bold text-center mb-12">Let's Connect!</h3>
+    <div class="w-full flex flex-row justify-center mb-12">
+      <img src="/img/pfp.jpg" alt="Your Bio Picture" class="w-48 h-48 border-4 border-minimal-primary dark:border-minimal-secondaryLight rounded-full shadow-lg">
     </div>
-    <div class="mt-10 flex flex-col gap-4 w-full">
-      <p class="mt-4 text-lg text-justify">
+    <div class="flex flex-col gap-4 w-full">
+      <p class="text-lg text-justify">
           {{about['contact-intro']}}
       </p>
-      <h3><span class="font-bold">LinkedIn: </span><a class="underline" href="{{about['linked-in-url']}}" target="_blank">{{about['linked-in-url']}}</a></h3>
-      <h3><span class="font-bold">GitHub: </span><a class="underline" href="{{about['github-url']}}" target="_blank">{{about['github-url']}}</a></h3>
+      <h3><span class="font-bold">LinkedIn: </span><a class="underline text-minimal-secondaryDark hover:text-minimal-primaryLight" href="{{about['linked-in-url']}}" target="_blank">{{about['linked-in-url']}}</a></h3>
+      <h3><span class="font-bold">GitHub: </span><a class="underline text-minimal-secondaryDark hover:text-minimal-primaryLight" href="{{about['github-url']}}" target="_blank">{{about['github-url']}}</a></h3>
     </div>
   </div>
 </section>
@@ -23,8 +23,8 @@ title: Portfolio - Walter Moore
 <!-- Contact Section -->
 <section id="contact" class="py-16">
   <div class="container mx-auto px-6">
-    <h3 class="text-3xl font-bold text-center">Contact Me</h3>
-    <form class="mt-10 max-w-xl mx-auto p-6 rounded shadow">
+    <h3 class="text-3xl font-bold text-center mb-8">Contact Me</h3>
+    <form class="max-w-xl mx-auto p-6 rounded-xl shadow border-2 border-minimal-primary dark:border-minimal-secondaryLight">
       <div class="mb-4">
         <label for="name" class="block font-bold">Name</label>
         <input type="text" id="name" class="w-full mt-2 p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
@@ -37,7 +37,7 @@ title: Portfolio - Walter Moore
         <label for="message" class="block font-bold">Message</label>
         <textarea id="message" rows="4" class="w-full mt-2 p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
       </div>
-      <button type="submit" class="w-full bg-minimal-primary py-3 rounded hover:bg-minimal-blue">Send Message</button>
+      <button type="submit" class="w-full border-2 border-minimal-primary dark:border-minimal-secondaryLight py-3 rounded-lg hover:bg-minimal-primaryLight hover:text-minimal-primaryDark">Send Message</button>
     </form>
   </div>
 </section>
