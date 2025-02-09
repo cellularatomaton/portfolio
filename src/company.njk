@@ -17,18 +17,16 @@ pagination:
         src="/img/{{ company.image }}"/>
     </div>
     <h3 class="text-3xl font-bold text-center mb-16">{{ company.location }}</h3>
-    <div class="flex flex-row items-stretch gap-8 rounded-xl border-2 border-minimal-primary dark:border-minimal-secondaryLight  shadow-lg">
+    <div class="flex flex-row items-stretch gap-8 rounded-xl border-2 border-minimal-primary dark:border-minimal-secondaryLight shadow-lg p-4">
       <!-- Details Section -->
-      <div class="grow p-4">
+      <div class="grow">
         <h4 class="text-2xl font-semibold">{{ company.title }}</h4>
         <h4 class="text-2xl">{{ company.date }}</h4>
         <p class="mt-2">{{ company.description }}</p>
+        
       </div>
-      <!-- Image Section -->
-      <div class="flex flex-col" >
-        <!-- PFP Image -->
-        <img src="/img/pfp.jpg" alt="{{ project.title }}" class="aspect-square rounded-r-lg shadow-lg"> 
-     </div>
+      <!-- PFP Image -->
+      <img src="/img/pfp.jpg" alt="{{ project.title }}" class="w-32 h-32 aspect-square rounded-lg shadow-lg"> 
     </div>
   </div>
 </section>
@@ -37,14 +35,14 @@ pagination:
 <section id="projects" class="mb-16">
   <div class="container mx-auto px-6">
     <h3 class="text-3xl font-bold text-center mb-16">Sample Projects</h3>
-    <div class="grid gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+    <div class="grid gap-4 lg:gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {% for project in portfolio | filterByCompany(company.slug) %}
       
       <div class="flex flex-col rounded-xl border-2 border-minimal-primary dark:border-minimal-secondaryLight h-full">
         <a href="/projects/{{project['project-slug']}}/" class="flex flex-col h-full">
           <img src="/projects/{{project['project-slug']}}/img/{{project.image}}" alt="Project Image" class="w-full h-64 object-cover object-top rounded-t-xl">
           <div class="grow shrink flex flex-col justify-between p-4">
-            <h4 class="text-xl font-bold truncate">{{project.title}}</h4>
+            <h4 class="md:text-xl font-bold truncate">{{project.title}}</h4>
             {# <p class="line-clamp-4 mt-2">{{project.description}}</p> #}
             <div class="mt-4 flex flex-wrap">
               <h2 class="mr-4 mb-2">Skills: <span class="px-3 py-1 text-sm bg-minimal-blue text-minimal-blueDark rounded-full">{{project.skills.length}}</span></h2>
