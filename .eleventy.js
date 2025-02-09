@@ -7,6 +7,8 @@ const tailwindConfig = require("./tailwind.config.js");
 module.exports = function(eleventyConfig) {
 
   eleventyConfig.addGlobalData("tailwindColors", tailwindConfig.exportedColors);
+  eleventyConfig.addGlobalData("tailwindDarkThemeColor", tailwindConfig.exportedColors.black);
+  eleventyConfig.addGlobalData("tailwindLightThemeColor", tailwindConfig.exportedColors.lightgray);
 
   const companiesData = require("./src/_data/companies.json");
   eleventyConfig.addCollection("companies", function () {
