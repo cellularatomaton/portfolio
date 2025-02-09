@@ -193,7 +193,7 @@
         "company-slug": "waltermoore",
         "title": "Cross Exchange Triangle Arbitrage",
         "image": "arbmageddon-1.webp",
-        "urls": ["https://github.com/cellularatomaton/arbmageddon/blob/master/README.md"],
+        "urls": ["https://github.com/cellularatomaton/arbmageddon/blob/master/README.md","https://www.loom.com/share/311ce3f6707c45cb9082277617d7d952"],
         "skills": ["Engineering", "Cryptocurrency"],
         "tools": ["Node", "ExpressJs", "Axios", "VueJs", "Lodash", "Websocket", "Winston", "Webpack"],
         "languages": ["Typescript", "HTML"],
