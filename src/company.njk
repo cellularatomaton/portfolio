@@ -40,7 +40,7 @@ pagination:
       
       <div class="flex flex-col rounded-xl border-2 border-minimal-primary dark:border-minimal-secondaryLight h-full">
         <a href="/projects/{{project['project-slug']}}/" class="flex flex-col h-full">
-          <img src="/projects/{{project['project-slug']}}/img/{{project.image}}" alt="Project Image" class="w-full h-64 object-cover object-top rounded-t-xl">
+          <img src="/projects/{{project['project-slug']}}/img/{{project.image}}" alt="Project Image" class="w-full aspect-square object-cover object-top rounded-t-xl">
           <div class="grow shrink flex flex-col justify-between p-4">
             <h4 class="md:text-xl font-bold truncate">{{project.title}}</h4>
             {# <p class="line-clamp-4 mt-2">{{project.description}}</p> #}
