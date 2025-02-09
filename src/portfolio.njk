@@ -4,7 +4,7 @@ title: Portfolio - Walter Moore
 ---
 
 <!-- About Section -->
-<section id="about" class="py-16">
+<section id="about" class="my-16">
   <div class="container mx-auto px-6">
     <h3 class="text-3xl font-bold text-center mb-12">My Project Portfolio</h3>
     <div class="w-full flex flex-row justify-center mb-12">
@@ -19,23 +19,23 @@ title: Portfolio - Walter Moore
 </section>
 
 <!-- Portfolio Section -->
-<section id="projects" class="py-16">
+<section id="projects" class="mb-16">
   <div class="container mx-auto px-6">
-    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <div class="grid gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {% for project in portfolio %}
       
       <div class="flex flex-col rounded-xl border border-2 border-minimal-primary dark:border-minimal-secondaryLight h-full">
         <a href="/projects/{{project['project-slug']}}/" class="flex flex-col">
           <img src="/projects/{{project['project-slug']}}/img/{{project.image}}" alt="Project Image" class=" w-full aspect-square object-cover rounded-t-lg">
-          <div class="grow shrink flex flex-col justify-between p-6">
+          <div class="grow shrink flex flex-col justify-between p-4">
             <div>
-              <h4 class="text-xl font-bold mt-4">{{project.title}}</h4>
-              <p class="line-clamp-4 mt-2 text-justify">{{project.description}}</p>
+              <h4 class="text-lg truncate font-bold">{{project.title}}</h4>
+              {# <p class="line-clamp-4 mt-2 text-justify">{{project.description}}</p> #}
             </div>
-            <div class="mt-4 flex flex-wrap-reverse gap-2 justify-end items-end">
-              {% for skill in project.skills %}
-              <span class="px-3 py-1 text-sm bg-minimal-blue text-minimal-blueDark rounded-full">{{skill}}</span>
-              {% endfor %}
+            <div class="mt-4 flex flex-wrap">
+              <h2 class="mr-4 mb-2">Skills: <span class="px-3 py-1 text-sm bg-minimal-blue text-minimal-blueDark rounded-full">{{project.skills.length}}</span></h2>
+              <h2 class="mr-4 mb-2">Languages: <span class="px-3 py-1 text-sm bg-minimal-green text-minimal-greenDark rounded-full">{{project.languages.length}}</span></h2>
+              <h2 class="mr-4 mb-2">Tools: <span class="px-3 py-1 text-sm bg-minimal-yellow text-minimal-yellowDark rounded-full">{{project.tools.length}}</span></h2>
             </div>
           </div>
         </a>
