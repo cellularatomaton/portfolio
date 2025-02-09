@@ -14,20 +14,20 @@ pagination:
     <h3 class="text-3xl font-bold text-center mb-8">{{ project.title }}</h3>
     <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-32">
       <!-- PFP Image -->
-      <img src="/img/pfp.jpg" alt="{{ project.title }}" class="w-24 h-24 rounded-full border-2 border-gray-200 shadow-lg">
+      <img src="/img/pfp.jpg" alt="{{ project.title }}" class="w-24 h-24 rounded-full border-2 border-minimal-primary dark:border-minimal-secondaryLight border-minimal-primary dark:border-minimal-secondaryLight shadow-lg">
       <h1 class="text-3xl">+</h1>
       <!-- Company Image -->
       <a href="/companies/{{project['company-slug']}}/">
-      <img src="/img/{{company.image}}" alt="{{ company.title }}" class="h-24 rounded-xl border-2 p-4 bg-minimal-white border-gray-200 shadow-lg">
+      <img src="/img/{{company.image}}" alt="{{ company.title }}" class="h-24 rounded-xl border-2 p-4 bg-minimal-white border-minimal-primary dark:border-minimal-secondaryLight  shadow-lg">
       </a>
     </div>
     
     <div class="flex flex-col lg:flex-row items-stretch gap-8">
       <!-- Project Section -->
-      <div class="grow shrink basis-1 aspect-square bg-cover bg-center rounded-xl border border-gray-200 shadow-lg" style="background-image: url('img/{{ project.image }}');">  
+      <div class="grow shrink basis-1 aspect-square bg-cover bg-center rounded-xl border-2 border-minimal-primary dark:border-minimal-secondaryLight  shadow-lg" style="background-image: url('img/{{ project.image }}');">  
       </div>
       <!-- Details Section -->
-      <div class="grow shrink basis-1 items-stretch border-2 rounded-xl p-4">
+      <div class="grow shrink basis-1 items-stretch border-2 border-minimal-primary dark:border-minimal-secondaryLight rounded-xl p-4">
 
         {% if project.skills and project.skills.length > 0 %}
         <!-- Skills -->
@@ -87,7 +87,7 @@ pagination:
 
 <section id="about" class="mb-16">
   <div class="container mx-auto px-6">
-    <div class="prose dark:prose-invert dark:text-minimal-secondaryLight mx-auto">
+    <div class="mx-auto prose dark:prose-invert prose-p:text-minimal-primaryDark prose-headings:text-minimal-primaryDark prose-strong:text-minimal-primaryDark prose-a:text-minimal-primaryDark prose-ul:text-minimal-primaryDark prose-ol:text-minimal-primaryDark marker:text-minimal-primaryDark prose-hr:border-minimal-primaryDark dark:prose-p:text-minimal-secondaryLight dark:prose-headings:text-minimal-secondaryLight dark:prose-strong:text-minimal-secondaryLight dark:prose-a:text-minimal-secondaryLight dark:prose-ul:text-minimal-secondaryLight dark:prose-ol:text-minimal-secondaryLight marker:text-minimal-secondaryLight dark:prose-hr:border-minimal-secondaryLight">
       {{ project.details | safe }}
     </div>
   </div>

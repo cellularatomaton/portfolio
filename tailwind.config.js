@@ -11,7 +11,7 @@ const colors = {
   secondary: "#C2A878",
   secondaryDark: "#8B7351",
   secondaryLight: "#E8D5B9",
-  
+
   blue: "#8AA4C8", // Muted Blue
   blueDark: "#4F6B8C", // Darker variant for text
 
@@ -34,6 +34,42 @@ module.exports = {
       colors: {
         minimal: colors,
       },
+      typography: ({ theme }) => ({
+        custom: {
+          css: {
+            '--tw-prose-body': theme(colors.secondaryDark),
+            '--tw-prose-headings': theme(colors.secondaryDark),
+            '--tw-prose-lead': theme(colors.secondary),
+            '--tw-prose-links': theme(colors.secondary),
+            '--tw-prose-bold': theme(colors.secondaryDark),
+            '--tw-prose-quotes': theme(colors.secondaryDark),
+            '--tw-prose-quote-borders': theme(colors.secondaryLight),
+            '--tw-prose-captions': theme(colors.secondary),
+            '--tw-prose-code': theme(colors.secondary),
+            '--tw-prose-pre-code': theme(colors.secondaryLight),
+            '--tw-prose-pre-bg': theme(colors.secondaryDark),
+            '--tw-prose-th-borders': theme(colors.secondaryLight),
+            '--tw-prose-td-borders': theme(colors.secondaryLight),
+          },
+        },
+        dark: {
+          css: {
+            '--tw-prose-body': theme(colors.secondaryDark),
+            '--tw-prose-headings': theme(colors.secondaryDark),
+            '--tw-prose-lead': theme(colors.secondary),
+            '--tw-prose-links': theme(colors.secondary),
+            '--tw-prose-bold': theme(colors.secondaryDark),
+            '--tw-prose-quotes': theme(colors.secondaryDark),
+            '--tw-prose-quote-borders': theme(colors.secondaryLight),
+            '--tw-prose-captions': theme(colors.secondary),
+            '--tw-prose-code': theme(colors.secondary),
+            '--tw-prose-pre-code': theme(colors.secondaryLight),
+            '--tw-prose-pre-bg': theme(colors.secondaryDark),
+            '--tw-prose-th-borders': theme(colors.secondaryLight),
+            '--tw-prose-td-borders': theme(colors.secondaryLight),
+          },
+        },
+      }),
     },
   },
   plugins: [require('@tailwindcss/typography')],
